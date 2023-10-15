@@ -4,10 +4,12 @@ const operacoesControle = require('./controladores/operacoes-controle');
 
 const rotas = express();
 
-rotas.get('/somar', informarNumeros, operacoesControle.soma);
-rotas.get('/subtrair', informarNumeros, operacoesControle.subtracao);
-rotas.get('/multiplicar', informarNumeros, operacoesControle.multiplicacao);
-rotas.get('/dividir', informarNumeros, operacoesControle.divisao);
+rotas.get('/soma', informarNumeros, operacoesControle.soma);
+rotas.get('/subtracao', informarNumeros, operacoesControle.subtracao);
+rotas.get('/multiplicacao', informarNumeros, operacoesControle.multiplicacao);
+rotas.get('/divisao', informarNumeros, operacoesControle.divisao);
+rotas.get('/potencia', informarNumeros, operacoesControle.potenciacao);
+rotas.get('/porcentagem', informarNumeros, operacoesControle.porcentagem);
 
 module.exports = rotas;
 

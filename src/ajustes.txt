@@ -1,0 +1,6 @@
+1 : query p/ body > vai receber dados no corpo da requisicao;
+
+2 : criar intermediarios em cada rota para explicar a operacao e o que as variaveis significam,
+i.e., para auxiliar o cliente a preencher os dados para a execucao da operacao;
+
+3 : editar readme para explicar o projeto.

@@ -34,9 +34,27 @@ const divisao = (req, res) => {
     return res.send(`${operacaoDivisao}`);
 }
 
+const potenciacao = (req, res) => {
+    const { num1, num2 } = req.query;
+
+    const operacaoPotenciacao = Number(num1) ** Number(num2);
+
+    return res.send(`${operacaoPotenciacao}`);
+}
+
+const porcentagem = (req, res) => {
+    const { num1, num2 } = req.query;
+
+    const operacaoPorcentagem = (Number(num1) / 100) * Number(num2);
+
+    return res.send(`${operacaoPorcentagem}`);
+}
+
 module.exports = {
     soma,
     subtracao,
     multiplicacao,
-    divisao
+    divisao,
+    potenciacao,
+    porcentagem
 }
