@@ -42,6 +42,14 @@ const potenciacao = (req, res) => {
     return res.send(`${operacaoPotenciacao}`);
 }
 
+const raizQuadrada = (req, res) => {
+    const { num1, num2 } = req.query;
+
+    const operacaoRaizQuadrada = Math.sqrt(num2);
+
+    return res.send(`${operacaoRaizQuadrada}`);
+}
+
 const porcentagem = (req, res) => {
     const { num1, num2 } = req.query;
 
@@ -56,5 +64,6 @@ module.exports = {
     multiplicacao,
     divisao,
     potenciacao,
+    raizQuadrada,
     porcentagem
 }
