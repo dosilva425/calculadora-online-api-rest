@@ -43,9 +43,13 @@ const potenciacao = (req, res) => {
 }
 
 const raizQuadrada = (req, res) => {
-    const { num1, num2 } = req.query;
+    const { num } = req.query;
 
-    const operacaoRaizQuadrada = Math.sqrt(num2);
+    if (Number(num) < 0) {
+        return res.status(400).send('Erro: Raiz quadrada de número negativo. Informe um número que seja positivo!');
+    }
+
+    const operacaoRaizQuadrada = Math.sqrt(num);
 
     return res.send(`${operacaoRaizQuadrada}`);
 }

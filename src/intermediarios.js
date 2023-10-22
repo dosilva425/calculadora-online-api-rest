@@ -7,6 +7,16 @@ const informarNumeros = (req, res, next) => {
     next();
 }
 
+const informarNumeroRaizQuadrada = (req, res, next) => {
+    const { num } = req.query;
+
+    if (!num) {
+        return res.status(400).send('Informe o número para a realização da operação!');
+    }
+    next();
+}
+
 module.exports = {
     informarNumeros,
+    informarNumeroRaizQuadrada
 }
