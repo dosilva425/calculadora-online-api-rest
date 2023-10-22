@@ -36,8 +36,6 @@ This is a pilot project to create the REST API for an online calculator. This pr
 
 npm install express
 
-npm install -D nodemon
-
 ```
 
 #### Run
