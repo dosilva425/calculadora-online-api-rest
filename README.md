@@ -2,8 +2,9 @@
 
 This is a pilot project to create the REST API for an online calculator. This project was conceived from one of the exercises in module 2 of the Cubos Academy backend software development course.
 
-<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/Screenshot%202023-10-15%20140617.png">
-<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/Screenshot%202023-10-15%20140702.png">
+<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/multiplicacao.png">
+<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/porcentagem.png">
+<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/raiz_quadrada.png">
 
 # Features:
 
