@@ -11,7 +11,8 @@ This is a pilot project to create the REST API for an online calculator. This pr
 - Subtraction
 - Multiplication
 - Division
-- Power
+- Power (Exponentiation)
+- Square Root
 - Percentage
 
 # Technologies
@@ -53,4 +54,54 @@ npm run dev
 - [GET]/multiplicacao
 - [GET]/divisao
 - [GET]/potencia
+- [GET]/raiz_quadrada
 - [GET]/porcentagem
+
+# More details about each route
+
+## Sum
+
+- URL: `/soma?num1&num2`
+- Request Query Params:
+  - `/num1` (required): 1st number;
+  - `/num2` (required): 2st number.
+
+## Subtraction
+
+- URL: `/subtracao?num1&num2`
+- Request Query Params:
+  - `/num1` (required): 1st number;
+  - `/num2` (required): 2st number.
+ 
+## Multiplication
+
+- URL: `/multiplicacao?num1&num2`
+- Request Query Params:
+  - `/num1` (required): 1st number;
+  - `/num2` (required): 2st number.
+ 
+## Division
+
+- URL: `/divisao?num1&num2`
+- Request Query Params:
+  - `/num1` (required): 1st number (dividend);
+  - `/num2` (required): 2st number (divisor).
+
+## Power (Exponentiation)
+
+- URL: `/potencia?num1&num2`
+- Request Query Params:
+  - `/num1` (required): 1st number (base);
+  - `/num2` (required): 2st number (exponent).
+  
+## Square Root
+
+- URL: `/raiz_quadrada?num1&num2`
+- Request Query Params:
+  - `/num` (required): Number (radicand).
+  
+## Percentage
+- URL: `/porcentagem?num1&num2`
+- Request Query Params:
+  - `/num1` (required): 1st number (percent);
+  - `/num2` (required): 2st number (total value).
