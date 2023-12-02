@@ -1,9 +1,11 @@
+require('dotenv').config();
 const express = require('express');
-const rotas = require('./rotas');
+const routes = require('./routes');
+const port = process.env.PORT;
 
 const app = express();
 
-// app.use(express.json()); // sem express por enquanto
-app.use(rotas);
+app.use(express.json());
+app.use(routes);
 
-app.listen(3000);
+app.listen(port);
