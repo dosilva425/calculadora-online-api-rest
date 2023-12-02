@@ -36,7 +36,7 @@ This is a simple project to create the REST API for an online calculator. This p
 
 ```
 
-npm -i
+npm install
 
 ```
 
