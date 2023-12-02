@@ -12,7 +12,7 @@ routes.get('/subtraction', validateRequestBody(schemaOperations), subtraction);
 routes.get('/multiplication', validateRequestBody(schemaOperations), multiplication);
 routes.get('/division', validateRequestBody(schemaDivisionOperation), division);
 routes.get('/power', validateRequestBody(schemaOperations), power);
-routes.get('/squareRoot', validateRequestBody(schemaSquareRootOperation), squareRoot);
+routes.get('/squareroot', validateRequestBody(schemaSquareRootOperation), squareRoot);
 routes.get('/percentage', validateRequestBody(schemaOperations), percentage);
 
 module.exports = routes;
