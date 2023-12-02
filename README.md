@@ -1,18 +1,18 @@
 # Online Calculator (REST API)
 
-This is a pilot project to create the REST API for an online calculator. This project was conceived from one of the exercises in module 2 of the Cubos Academy backend software development course.
+This is a simple project to create the REST API for an online calculator. This project was conceived from one of the exercises in module 2 of the Cubos Academy back-end software development course.
 
-<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/multiplicacao.png">
-<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/porcentagem.png">
-<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/raiz_quadrada.png">
+<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/percentage.png">
+<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/squareroot.png">
+<img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/division.png">
 
 # Features:
 
-- Sum
+- Addition
 - Subtraction
 - Multiplication
 - Division
-- Power (Exponentiation)
+- Power 
 - Square Root
 - Percentage
 
@@ -20,7 +20,9 @@ This is a pilot project to create the REST API for an online calculator. This pr
 
 - JavaScript
 - NodeJS
-- Express
+- dotenv
+- express
+- joi
 
 # Requirements
 
@@ -34,7 +36,7 @@ This is a pilot project to create the REST API for an online calculator. This pr
 
 ```
 
-npm install express
+npm -i
 
 ```
 
@@ -48,59 +50,59 @@ npm run dev
 
 # Routes
 
-- [GET]/soma
-- [GET]/subtracao
-- [GET]/multiplicacao
-- [GET]/divisao
-- [GET]/potencia
-- [GET]/raiz_quadrada
-- [GET]/porcentagem
+- [GET]/addition
+- [GET]/subtraction
+- [GET]/multiplication
+- [GET]/division
+- [GET]/power
+- [GET]/squareroot
+- [GET]/percentage
 
 # More details about each route
 
-## Sum
+## Addition
 
-- URL: `/soma?num1&num2`
-- Request Query Params:
-  - `/num1` (required): 1st number;
-  - `/num2` (required): 2st number.
+- URL: `/addition`
+- Request Body
+  - `x` (required): 1st number;
+  - `y` (required): 2st number.
 
 ## Subtraction
 
-- URL: `/subtracao?num1&num2`
-- Request Query Params:
-  - `/num1` (required): 1st number;
-  - `/num2` (required): 2st number.
+- URL: `/subtraction`
+- Request Body
+  - `x` (required): 1st number;
+  - `y` (required): 2st number.
  
 ## Multiplication
 
-- URL: `/multiplicacao?num1&num2`
-- Request Query Params:
-  - `/num1` (required): 1st number;
-  - `/num2` (required): 2st number.
+- URL: `/multiplication`
+- Request Body
+  - `x` (required): 1st number;
+  - `y` (required): 2st number.
  
 ## Division
 
-- URL: `/divisao?num1&num2`
-- Request Query Params:
-  - `/num1` (required): 1st number (dividend);
-  - `/num2` (required): 2st number (divisor).
+- URL: `/division`
+- Request Body
+  - `x` (required): 1st number (dividend);
+  - `y` (required): 2st number (divisor).
 
-## Power (Exponentiation)
+## Power 
 
-- URL: `/potencia?num1&num2`
-- Request Query Params:
-  - `/num1` (required): 1st number (base);
-  - `/num2` (required): 2st number (exponent).
+- URL: `/power`
+- Request Body:
+  - `x` (required): 1st number (base);
+  - `y` (required): 2st number (exponent).
   
 ## Square Root
 
-- URL: `/raiz_quadrada?num1&num2`
-- Request Query Params:
-  - `/num` (required): Number (radicand).
+- URL: `/squareroot`
+- Request Body
+  - `x` (required): Number (radicand).
   
 ## Percentage
-- URL: `/porcentagem?num1&num2`
-- Request Query Params:
-  - `/num1` (required): 1st number (percent);
-  - `/num2` (required): 2st number (total value).
+- URL: `/percentage`
+- Request Body:
+  - `x` (required): 1st number (percent);
+  - `y` (required): 2st number (total value).
