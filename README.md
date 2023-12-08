@@ -31,10 +31,11 @@ This is a simple project to create the REST API for an online calculator. This p
 
 ## Prepare
 
-- Clone this repository on any folder that you want
-- Open your terminal on the same folder and type
-
 ```
+
+git clone git@github.com:dosilva425/online-calculator-rest-api.git
+
+cd online-calculator-rest-api
 
 npm install
 
