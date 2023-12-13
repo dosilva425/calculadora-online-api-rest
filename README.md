@@ -1,6 +1,6 @@
 # Online Calculator (REST API)
 
-This is a simple project to create the REST API for an online calculator. This project was conceived from one of the exercises in module 2 of the Cubos Academy back-end software development course.
+This is a simple project to create the REST API for an online calculator.
 
 <img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/percentage.png">
 <img src="https://github.com/dosilva425/calculadora-online-api-rest/blob/main/prints/squareroot.png">
