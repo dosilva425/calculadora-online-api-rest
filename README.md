@@ -33,9 +33,9 @@ This is a simple project to create the REST API for an online calculator.
 
 ```
 
-git clone git@github.com:dosilva425/online-calculator-rest-api.git
+git clone git@github.com:dosilva425/online-calculator.git
 
-cd online-calculator-rest-api
+cd online-calculator
 
 npm install
 
